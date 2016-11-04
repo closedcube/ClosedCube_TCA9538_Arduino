@@ -44,14 +44,12 @@ void ClosedCube_TCA9538::begin(uint8_t address) {
 }
 
 TCA9538_Input ClosedCube_TCA9538::readInput() {
-	Wire.requestFrom(_address, (uint8_t)2);
-
-	while (Wire.available() != 2) {
-		Serial.print(".");
-	}
-
+	Wire.requestFrom(_address, (uint8_t)1);
+	delay(1000); // really so long?
 	TCA9538_Input input;
 	input.rawData = Wire.read();
+
+	return input;
 }
 
 
