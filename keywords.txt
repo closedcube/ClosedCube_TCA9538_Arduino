@@ -14,3 +14,11 @@ ClosedCube_TCA9538	KEYWORD1
 ##################################################################
 
 begin KEYWORD2
+init KEYWORD2
+readInput KEYWORD2
+writePolarity KEYWORD2
+writeOutput KEYWORD2
+readOutput KEYWORD2
+writeConfig KEYWORD2
+
+

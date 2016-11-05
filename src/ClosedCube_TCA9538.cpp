@@ -44,8 +44,11 @@ void ClosedCube_TCA9538::begin(uint8_t address) {
 }
 
 TCA9538_Input ClosedCube_TCA9538::readInput() {
+	Wire.beginTransmission(_address);
+	Wire.write(TCA9538_INPUT_PORT);
+	Wire.endTransmission();
+
 	Wire.requestFrom(_address, (uint8_t)1);
-	delay(1000); // really so long?
 	TCA9538_Input input;
 	input.rawData = Wire.read();
 
@@ -60,6 +63,19 @@ void ClosedCube_TCA9538::writePolarity(TCA9538_PolarityInversion polarity) {
 void ClosedCube_TCA9538::writeOutput(TCA9538_Output output) {
 	writeData(TCA9538_OUTPUT_PORT, output.rawData);
 }
+
+TCA9538_Output ClosedCube_TCA9538::readOutput() {
+	Wire.beginTransmission(_address);
+	Wire.write(TCA9538_OUTPUT_PORT);
+	Wire.endTransmission();
+
+	Wire.requestFrom(_address, (uint8_t)1);
+	TCA9538_Output input;
+	input.rawData = Wire.read();
+
+	return input;
+}
+
 
 void ClosedCube_TCA9538::writeConfig(TCA9538_Config config) {
 	writeData(TCA9538_CONFIG, config.rawData);

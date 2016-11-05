@@ -89,7 +89,10 @@ public:
 	TCA9538_Input readInput();
 
 	void writePolarity(TCA9538_PolarityInversion polarity);
+	
 	void writeOutput(TCA9538_Output output);
+	TCA9538_Output readOutput();
+
 	void writeConfig(TCA9538_Config config);
 
 private:
