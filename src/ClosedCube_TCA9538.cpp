@@ -1,6 +1,6 @@
 /*
 
-Arduino Library for Texas Instruments 8-Bit I2C and SMBus Low-Power I/O Expander
+Arduino Library for Texas Instruments Remote 8-Bit I2C and SMBus Low-Power I/O Expander
 Written by AA for ClosedCube
 ---
 

@@ -1,6 +1,6 @@
 ##################################################################
 # Syntax Coloring Map For 
-# ClosedCube TCA9538 8-bit I2C Low-Power I/O Expander breakout module
+# ClosedCube TCA9538 Remote 8-bit I2C Low-Power I/O Expander breakout module
 ##################################################################
 
 ##################################################################

@@ -1,7 +1,7 @@
 /*
 
-This is example for Texas Instruments TCA9538 8-Bit I2C and SMBus Low-Power I/O Expander Arduino Library
-ClosedCube TCA9538 8-bit I2C Low-Power I/O Expander breakout module
+This is example for Texas Instruments Remote TCA9538 8-Bit I2C and SMBus Low-Power I/O Expander Arduino Library
+ClosedCube TCA9538 Remote 8-bit I2C Low-Power I/O Expander breakout module
 
 Written by AA for ClosedCube
 
