@@ -18,8 +18,7 @@ P7 to Pin 7 to be defined as Input
 TCA9538		 	P0  (Input)		P7 (Output)
 Arduino Uno		13	(Output)	7 (Input)
 
-MIT License
-
+BSD 3-Clause "New" or "Revised" License
 */
 
 #include "ClosedCube_TCA9538.h"
